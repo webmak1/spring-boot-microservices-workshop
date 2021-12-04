@@ -11,6 +11,15 @@ https://www.youtube.com/c/JavaBrainsChannel/playlists?view=50&sort=dd&shelf_id=4
 **original src:**  
 https://github.com/koushikkothagal/spring-boot-microservices-workshop
 
+
+<br/>
+
+![Application](/img/pic01.png?raw=true)
+
+<br/>
+
+### Development
+
 <br/>
 
 ```
@@ -201,8 +210,22 @@ OK!
 
 <br/>
 
+### 20 Creating Eureka clients
 
-**movie-info-service/pom.xml**
+<br/>
+
+**Eureka server should be in the running state**
+
+<br/>
+
+
+**{clients}/pom.xml**
+
+<br/>
+
+```
+<spring-cloud.version>2021.0.0</spring-cloud.version>
+```
 
 <br/>
 
@@ -211,14 +234,6 @@ OK!
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-```
-
-
-<br/>
-
-
-```
-<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
 ```
 
 <br/>
@@ -250,3 +265,17 @@ OK!
 	</repositories>
 ```
 
+<br/>
+
+![Application](/img/pic02.png?raw=true)
+
+<br/>
+
+---
+
+<br/>
+
+**Marley**
+
+Any questions on eng: https://javadev.org/chat/  
+Любые вопросы на русском: https://javadev.ru/chat/
