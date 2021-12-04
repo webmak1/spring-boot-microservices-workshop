@@ -230,10 +230,10 @@ OK!
 <br/>
 
 ```xml
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
+  <dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+  </dependency>
 ```
 
 <br/>
@@ -268,6 +268,15 @@ OK!
 <br/>
 
 ![Application](/img/pic02.png?raw=true)
+
+
+<br/>
+
+### 21 Discovering services through Eureka
+
+http://localhost:8081/catalog/foo
+
+OK!
 
 <br/>
 
