@@ -1,5 +1,8 @@
 # [Java Brains] Spring Boot Microservices [ENG, 2019]
 
+<br/>
+
+**YouTube:**  
 https://www.youtube.com/c/JavaBrainsChannel/playlists?view=50&sort=dd&shelf_id=4
 
 
@@ -121,6 +124,46 @@ http://localhost:8081/catalog/foo
 
 <br/>
 
+### 19 Starting a Eureka server
+
+
+**DiscoveryServerApplication.java**
+
+<br/>
+
+```
+***
+@EnableEurekaServer
+***
+```
+
+<br/>
+
+```
+$ vi src/main/resources/application.properties 
+```
+
+<br/>
+
+```
+server.port=8761
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+```
+
+<br/>
+
+http://localhost:8761/
+
+<br/>
+
+OK!
+
+
+<!--
+
+<br/>
+
 
 **discovery-server/pom.xml**
 
@@ -153,39 +196,29 @@ http://localhost:8081/catalog/foo
   </dependency>
 ```
 
-<br/>
+-->
 
-```
-$ vi src/main/resources/application.properties 
-```
 
 <br/>
 
+
+**movie-info-service/pom.xml**
+
+<br/>
+
+```xml
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
 ```
-server.port=8761
-eureka.client.register-with-eureka=false
-eureka.client.fetch-registry=false
-```
+
 
 <br/>
 
 
 ```
 <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
-```
-
-
-
-<br/>
-
-```xml
-	<repositories>
-		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone</url>
-		</repository>
-	</repositories>
 ```
 
 <br/>
@@ -203,3 +236,17 @@ eureka.client.fetch-registry=false
 		</dependencies>
 	</dependencyManagement>
 ```
+
+
+<br/>
+
+```xml
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+		</repository>
+	</repositories>
+```
+
