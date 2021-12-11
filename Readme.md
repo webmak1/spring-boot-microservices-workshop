@@ -304,7 +304,20 @@ OK!
 
 <br/>
 
-![Application](/img/pic01.png?raw=true)
+![Application](/img/pic03.png?raw=true)
+
+<br/>
+
+![Application](/img/pic04.png?raw=true)
+
+
+<br/>
+
+### 16 Adding Hystrix to a Spring Boot app
+
+<br/>
+
+![Application](/img/pic05.png?raw=true)
 
 <br/>
 
