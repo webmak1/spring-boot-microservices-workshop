@@ -22,6 +22,11 @@ https://github.com/koushikkothagal/spring-boot-microservices-workshop
 
 <br/>
 
+## 01. Spring Boot Microservices Level 1: Communication and Discovery
+
+<br/>
+
+
 ```
 $ cd apps
 ```
@@ -277,6 +282,29 @@ http://localhost:8081/catalog/foo
 
 OK!
 
+
+<br/>
+
+## 02. Spring Boot Microservices Level 2: Fault Tolerance and Resilience
+
+<br/>
+
+### 04. Calling an external API
+
+<br/>
+
+https://themoviedb.org/
+
+
+<br/>
+
+http://localhost:8081/catalog/foo
+
+OK!
+
+<br/>
+
+![Application](/img/pic01.png?raw=true)
 
 <br/>
 
